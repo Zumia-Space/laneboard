@@ -1,0 +1,18 @@
+{
+ "code": "API-2",
+ "title": "Rate limiter for the public API",
+ "lane": "lane-beta",
+ "health": "green",
+ "goal": "No client can exceed 60 requests per minute; limits visible in response headers",
+ "now": "Token bucket implemented; load test running",
+ "next": "Ship behind a flag",
+ "needsAnh": "",
+ "order": 1,
+ "steps": [
+  { "id": "s1", "label": "Design", "sub": "token bucket", "state": "done", "zone": "plan", "detail": "Per-key bucket, refill 1/s, burst 60.", "recommend": "" },
+  { "id": "s2", "label": "Implement", "sub": "", "state": "done", "zone": "build", "detail": "Middleware plus headers X-RateLimit-Remaining and Retry-After.", "recommend": "" },
+  { "id": "s3", "label": "Load test", "sub": "10k rps synthetic", "state": "active", "zone": "test", "detail": "", "recommend": "" },
+  { "id": "s4", "label": "Ship", "sub": "", "state": "todo", "zone": "ship", "detail": "", "recommend": "" }
+ ],
+ "worker": { "model": "deepseek", "effort": "high", "reason": "mechanical code" }
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "generated_at": "2026-10-24T04:55:25.000Z",
+  "accounts": [
+    {
+      "id": "premium-a",
+      "label": "Premium A",
+      "machine": "Main PC · this machine",
+      "snap": "ok",
+      "window5h": {
+        "pct": 20,
+        "resets_at": "2026-10-24T08:40:00.000Z",
+        "as_of": "2026-10-24T04:49:59.000Z"
+      },
+      "week": null,
+      "tokens": {
+        "today": 4861938,
+        "d7": 125250745,
+        "today_cache_read": 229123331,
+        "d7_cache_read": 5193984914,
+        "last_activity": "2026-10-24T04:55:22.000Z",
+        "as_of": "2026-10-24T04:55:25.000Z"
+      },
+      "reach": {
+        "status": "ok",
+        "checked_at": "2026-10-24T04:55:25.000Z"
+      }
+    },
+    {
+      "id": "premium-b",
+      "label": "Premium B",
+      "machine": "Spare PC",
+      "snap": "never_seen",
+      "window5h": null,
+      "week": null,
+      "tokens": {
+        "today": 1706034,
+        "d7": 21712573,
+        "today_cache_read": 59989710,
+        "d7_cache_read": 785828897,
+        "last_activity": "2026-10-24T03:54:19.000Z",
+        "as_of": "2026-10-24T04:55:25.000Z"
+      },
+      "reach": {
+        "status": "ok",
+        "checked_at": "2026-10-24T04:55:25.000Z"
+      }
+    },
+    {
+      "id": "acme",
+      "label": "Acme Tours",
+      "machine": "Laptop",
+      "snap": "never_seen",
+      "window5h": null,
+      "week": null,
+      "tokens": {
+        "today": 0,
+        "d7": 0,
+        "today_cache_read": 0,
+        "d7_cache_read": 0,
+        "last_activity": "2026-09-28T14:25:10.000Z",
+        "as_of": "2026-10-24T04:55:25.000Z"
+      },
+      "reach": {
+        "status": "ok",
+        "checked_at": "2026-10-24T04:55:25.000Z"
+      }
+    }
+  ]
+}

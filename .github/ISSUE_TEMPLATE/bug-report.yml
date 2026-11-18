@@ -1,0 +1,53 @@
+name: Bug report
+description: Something in Laneboard does not work as it should.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Laneboard version
+      description: "`version` in package.json, or the `release` field of `/healthz`."
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: runtime
+    attributes:
+      label: Node version and operating system
+      placeholder: "Node 22.11, Ubuntu 24.04"
+    validations:
+      required: true
+  - type: dropdown
+    id: how
+    attributes:
+      label: How you run it
+      options:
+        - npm start
+        - Docker
+        - Behind a login proxy
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Run ...
+        2. Call ...
+        3. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected, and what happened instead
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Optional. Remove tokens, the contents of `data/owner.token` and any personal data before you paste.
+      render: text

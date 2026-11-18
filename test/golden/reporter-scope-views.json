@@ -1,0 +1,2765 @@
+{
+ "owner": {
+  "version": 1,
+  "seq": 25,
+  "now": "2026-10-14T00:00:25.000Z",
+  "config": {
+   "version": "0.1.0",
+   "stall_ms": 10800000,
+   "max_attachment_bytes": 262144,
+   "max_upload_bytes": 67108864,
+   "models": [
+    "opus",
+    "sonnet",
+    "haiku",
+    "deepseek",
+    "gpt",
+    "gemini"
+   ],
+   "model_labels": {}
+  },
+  "me": {
+   "token_id": "tok-1",
+   "name": "owner",
+   "role": "owner",
+   "label": "owner",
+   "scope_tasks": [
+    "*"
+   ],
+   "prefs": {}
+  },
+  "tasks": [
+   {
+    "id": "API-2",
+    "rev": 1,
+    "visibility": "internal",
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:07.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:07.000Z"
+    },
+    "title": "Rate limiter ZZAPI2ZZ",
+    "lane": "lane-beta",
+    "health": "green",
+    "status": "doing",
+    "text_at": "2026-10-14T00:00:07.000Z",
+    "goal": "goal ZZAPI2ZZ",
+    "worker": {
+     "model": "sonnet",
+     "effort": "high",
+     "by": "owner",
+     "at": "2026-10-14T00:00:24.000Z"
+    },
+    "loops": [],
+    "step_ids": [
+     "s1",
+     "s2"
+    ],
+    "steps": [
+     {
+      "id": "API-2/s1",
+      "task_id": "API-2",
+      "rev": 1,
+      "attribution": {
+       "created_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "created_at": "2026-10-14T00:00:07.000Z",
+       "updated_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "updated_at": "2026-10-14T00:00:07.000Z"
+      },
+      "label": "Implement ZZAPI2ZZ",
+      "zone": "build",
+      "state": "active",
+      "state_at": "2026-10-14T00:00:07.000Z"
+     },
+     {
+      "id": "API-2/s2",
+      "task_id": "API-2",
+      "rev": 1,
+      "attribution": {
+       "created_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "created_at": "2026-10-14T00:00:07.000Z",
+       "updated_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "updated_at": "2026-10-14T00:00:07.000Z"
+      },
+      "label": "Owner decides ZZAPI2ZZ",
+      "zone": "owner",
+      "state": "waiting",
+      "state_at": "2026-10-14T00:00:07.000Z"
+     }
+    ],
+    "current_step": {
+     "id": "API-2/s1",
+     "label": "Implement ZZAPI2ZZ",
+     "state": "active"
+    },
+    "last_activity_at": "2026-10-14T00:00:21.000Z",
+    "worker_default": null,
+    "roles": {
+     "plan": {
+      "model": "opus",
+      "effort": "high",
+      "by": "coordinator",
+      "default": true
+     },
+     "code": {
+      "model": "sonnet",
+      "effort": "high",
+      "by": "owner",
+      "at": "2026-10-14T00:00:24.000Z"
+     },
+     "review": {
+      "model": "opus",
+      "effort": "high",
+      "by": "coordinator",
+      "default": true
+     },
+     "scout": {
+      "model": "haiku",
+      "effort": "low",
+      "by": "coordinator",
+      "default": true,
+      "can_verdict": false
+     }
+    },
+    "gate_fails": {},
+    "measured": {
+     "started_at": "2026-10-14T00:00:07.000Z",
+     "work_ms": 0,
+     "wait_ms": 18000
+    },
+    "status_request": null
+   },
+   {
+    "id": "WEB-3",
+    "rev": 1,
+    "visibility": "internal",
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:06.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:06.000Z"
+    },
+    "title": "Landing page",
+    "lane": "lane-alpha",
+    "health": "green",
+    "status": "doing",
+    "text_at": "2026-10-14T00:00:06.000Z",
+    "goal": "Ship the page",
+    "worker": null,
+    "loops": [],
+    "step_ids": [
+     "s1",
+     "s2"
+    ],
+    "steps": [
+     {
+      "id": "WEB-3/s1",
+      "task_id": "WEB-3",
+      "rev": 1,
+      "attribution": {
+       "created_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "created_at": "2026-10-14T00:00:06.000Z",
+       "updated_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "updated_at": "2026-10-14T00:00:06.000Z"
+      },
+      "label": "Build",
+      "zone": "build",
+      "state": "active",
+      "state_at": "2026-10-14T00:00:06.000Z"
+     },
+     {
+      "id": "WEB-3/s2",
+      "task_id": "WEB-3",
+      "rev": 1,
+      "attribution": {
+       "created_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "created_at": "2026-10-14T00:00:06.000Z",
+       "updated_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "updated_at": "2026-10-14T00:00:06.000Z"
+      },
+      "label": "Owner picks hero",
+      "zone": "owner",
+      "state": "waiting",
+      "state_at": "2026-10-14T00:00:06.000Z"
+     }
+    ],
+    "current_step": {
+     "id": "WEB-3/s1",
+     "label": "Build",
+     "state": "active"
+    },
+    "last_activity_at": "2026-10-14T00:00:20.000Z",
+    "worker_default": null,
+    "roles": {
+     "plan": {
+      "model": "opus",
+      "effort": "high",
+      "by": "coordinator",
+      "default": true
+     },
+     "code": {
+      "model": "sonnet",
+      "effort": "high",
+      "by": "coordinator",
+      "default": true
+     },
+     "review": {
+      "model": "opus",
+      "effort": "high",
+      "by": "coordinator",
+      "default": true
+     },
+     "scout": {
+      "model": "haiku",
+      "effort": "low",
+      "by": "coordinator",
+      "default": true,
+      "can_verdict": false
+     }
+    },
+    "gate_fails": {},
+    "measured": {
+     "started_at": "2026-10-14T00:00:06.000Z",
+     "work_ms": 0,
+     "wait_ms": 19000
+    },
+    "status_request": null
+   }
+  ],
+  "asks": [
+   {
+    "id": "ask-9",
+    "task_id": "WEB-3",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:08.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:08.000Z"
+    },
+    "step_id": "s2",
+    "text": "ask web",
+    "status": "open"
+   },
+   {
+    "id": "ask-14",
+    "task_id": "API-2",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:13.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:13.000Z"
+    },
+    "step_id": "s2",
+    "text": "ask ZZAPI2ZZ",
+    "status": "open"
+   }
+  ],
+  "inbox": [
+   {
+    "id": "inb-21",
+    "task_id": "WEB-3",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-3",
+      "name": "lane-alpha",
+      "role": "reporter",
+      "lane": "lane-alpha"
+     },
+     "created_at": "2026-10-14T00:00:20.000Z",
+     "updated_by": {
+      "token_id": "tok-3",
+      "name": "lane-alpha",
+      "role": "reporter",
+      "lane": "lane-alpha"
+     },
+     "updated_at": "2026-10-14T00:00:20.000Z"
+    },
+    "kind": "report",
+    "text": "reporter note web"
+   },
+   {
+    "id": "inb-22",
+    "task_id": "API-2",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-4",
+      "name": "lane-beta",
+      "role": "reporter",
+      "lane": "lane-beta"
+     },
+     "created_at": "2026-10-14T00:00:21.000Z",
+     "updated_by": {
+      "token_id": "tok-4",
+      "name": "lane-beta",
+      "role": "reporter",
+      "lane": "lane-beta"
+     },
+     "updated_at": "2026-10-14T00:00:21.000Z"
+    },
+    "kind": "report",
+    "text": "reporter note ZZAPI2ZZ"
+   }
+  ],
+  "feedback": [
+   {
+    "id": "fb-10",
+    "task_id": "WEB-3",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "created_at": "2026-10-14T00:00:09.000Z",
+     "updated_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "updated_at": "2026-10-14T00:00:09.000Z"
+    },
+    "kind": "note",
+    "text": "feedback web",
+    "status": "open"
+   },
+   {
+    "id": "fb-12",
+    "task_id": "WEB-3",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "created_at": "2026-10-14T00:00:11.000Z",
+     "updated_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "updated_at": "2026-10-14T00:00:11.000Z"
+    },
+    "kind": "goal-lock",
+    "goal_version": 1,
+    "text": "Goal locked v1\nGoal: locked web\nOutput: o\nOutcome: c",
+    "status": "open"
+   },
+   {
+    "id": "fb-15",
+    "task_id": "API-2",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "created_at": "2026-10-14T00:00:14.000Z",
+     "updated_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "updated_at": "2026-10-14T00:00:14.000Z"
+    },
+    "kind": "note",
+    "text": "feedback ZZAPI2ZZ",
+    "status": "open"
+   },
+   {
+    "id": "fb-17",
+    "task_id": "API-2",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "created_at": "2026-10-14T00:00:16.000Z",
+     "updated_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "updated_at": "2026-10-14T00:00:16.000Z"
+    },
+    "kind": "goal-lock",
+    "goal_version": 1,
+    "text": "Goal locked v1\nGoal: locked ZZAPI2ZZ\nOutput: o\nOutcome: c",
+    "status": "open"
+   }
+  ],
+  "messages": [
+   {
+    "id": "fb-10",
+    "task_id": "WEB-3",
+    "scope": {},
+    "kind": "note",
+    "author": {
+     "name": "owner",
+     "role": "owner"
+    },
+    "body": "feedback web",
+    "ts": "2026-10-14T00:00:09.000Z",
+    "answers_ask_id": null,
+    "status": "open",
+    "needs_receipt": false
+   },
+   {
+    "id": "fb-12",
+    "task_id": "WEB-3",
+    "scope": {},
+    "kind": "goal-lock",
+    "author": {
+     "name": "owner",
+     "role": "owner"
+    },
+    "body": "Goal locked v1\nGoal: locked web\nOutput: o\nOutcome: c",
+    "ts": "2026-10-14T00:00:11.000Z",
+    "answers_ask_id": null,
+    "status": "open",
+    "needs_receipt": false
+   },
+   {
+    "id": "fb-15",
+    "task_id": "API-2",
+    "scope": {},
+    "kind": "note",
+    "author": {
+     "name": "owner",
+     "role": "owner"
+    },
+    "body": "feedback ZZAPI2ZZ",
+    "ts": "2026-10-14T00:00:14.000Z",
+    "answers_ask_id": null,
+    "status": "open",
+    "needs_receipt": false
+   },
+   {
+    "id": "fb-17",
+    "task_id": "API-2",
+    "scope": {},
+    "kind": "goal-lock",
+    "author": {
+     "name": "owner",
+     "role": "owner"
+    },
+    "body": "Goal locked v1\nGoal: locked ZZAPI2ZZ\nOutput: o\nOutcome: c",
+    "ts": "2026-10-14T00:00:16.000Z",
+    "answers_ask_id": null,
+    "status": "open",
+    "needs_receipt": false
+   }
+  ],
+  "attachments": [
+   {
+    "id": "att-19",
+    "task_id": "WEB-3",
+    "rev": 1,
+    "visibility": "internal",
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:18.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:18.000Z"
+    },
+    "name": "web.txt",
+    "mime": "text/plain",
+    "size": 9,
+    "sha256": "9a949da0d35532fc4afb4049dafbffebdce4a766df2329d457ef9c5d828d9715"
+   },
+   {
+    "id": "att-20",
+    "task_id": "API-2",
+    "rev": 1,
+    "visibility": "internal",
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:19.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:19.000Z"
+    },
+    "name": "api-ZZAPI2ZZ.txt",
+    "mime": "text/plain",
+    "size": 18,
+    "sha256": "d15bd90b9f30ba774ecfbc5b1ca28818e4475e3953b41da79eb4773f98d4d41b"
+   }
+  ],
+  "routing": {
+   "API-2": {
+    "task_id": "API-2",
+    "model": "sonnet",
+    "effort": "high",
+    "set_by": {
+     "token_id": "tok-1",
+     "name": "owner",
+     "role": "owner",
+     "label": "owner"
+    },
+    "set_at": "2026-10-14T00:00:24.000Z"
+   }
+  },
+  "route_override": {},
+  "roles": {},
+  "times": {
+   "WEB-3/s1": {
+    "first_seen_at": "2026-10-14T00:00:06.000Z",
+    "waiting_total_ms": 0,
+    "last_state": "active",
+    "transitions": [],
+    "started_at": "2026-10-14T00:00:06.000Z"
+   },
+   "WEB-3/s2": {
+    "first_seen_at": "2026-10-14T00:00:06.000Z",
+    "waiting_total_ms": 0,
+    "last_state": "waiting",
+    "transitions": [],
+    "waiting_since": "2026-10-14T00:00:06.000Z"
+   },
+   "API-2/s1": {
+    "first_seen_at": "2026-10-14T00:00:07.000Z",
+    "waiting_total_ms": 0,
+    "last_state": "active",
+    "transitions": [],
+    "started_at": "2026-10-14T00:00:07.000Z"
+   },
+   "API-2/s2": {
+    "first_seen_at": "2026-10-14T00:00:07.000Z",
+    "waiting_total_ms": 0,
+    "last_state": "waiting",
+    "transitions": [],
+    "waiting_since": "2026-10-14T00:00:07.000Z"
+   }
+  },
+  "task_times": {
+   "WEB-3": {
+    "first_seen_at": "2026-10-14T00:00:06.000Z",
+    "started_at": "2026-10-14T00:00:06.000Z"
+   },
+   "API-2": {
+    "first_seen_at": "2026-10-14T00:00:07.000Z",
+    "started_at": "2026-10-14T00:00:07.000Z"
+   }
+  },
+  "docs": {
+   "summary": {
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:22.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:22.000Z"
+    },
+    "items": [
+     "board note ZZAPI2ZZ"
+    ]
+   },
+   "registry": {
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:23.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:23.000Z"
+    },
+    "entries": [
+     {
+      "id": "reg-web",
+      "code": "WEB-3",
+      "title": "Landing page",
+      "status": "open"
+     },
+     {
+      "id": "reg-api",
+      "code": "API-2",
+      "title": "Rate limiter ZZAPI2ZZ",
+      "status": "open"
+     }
+    ]
+   }
+  },
+  "goals": {
+   "WEB-3": {
+    "task_id": "WEB-3",
+    "version": 1,
+    "goal": "locked web",
+    "output": "o",
+    "outcome": "c",
+    "locked_at": "2026-10-14T00:00:11.000Z",
+    "locked_by": {
+     "token_id": "tok-1",
+     "name": "owner",
+     "role": "owner",
+     "label": "owner"
+    },
+    "history": []
+   },
+   "API-2": {
+    "task_id": "API-2",
+    "version": 1,
+    "goal": "locked ZZAPI2ZZ",
+    "output": "o",
+    "outcome": "c",
+    "locked_at": "2026-10-14T00:00:16.000Z",
+    "locked_by": {
+     "token_id": "tok-1",
+     "name": "owner",
+     "role": "owner",
+     "label": "owner"
+    },
+    "history": []
+   }
+  },
+  "plans": {
+   "WEB-3": [
+    {
+     "id": "plan-11",
+     "task_id": "WEB-3",
+     "reviewer": "fable",
+     "verdict": "",
+     "body": "plan web",
+     "posted_at": "2026-10-14T00:00:10.000Z",
+     "goal_version": 0,
+     "by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     }
+    }
+   ],
+   "API-2": [
+    {
+     "id": "plan-16",
+     "task_id": "API-2",
+     "reviewer": "fable",
+     "verdict": "",
+     "body": "plan ZZAPI2ZZ",
+     "posted_at": "2026-10-14T00:00:15.000Z",
+     "goal_version": 0,
+     "by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     }
+    }
+   ]
+  },
+  "pings": [
+   {
+    "id": "ping-12",
+    "at": "2026-10-14T00:00:11.000Z",
+    "kind": "goal-lock",
+    "task_id": "WEB-3",
+    "detail": {
+     "version": 1
+    },
+    "open": 2,
+    "by": "owner"
+   },
+   {
+    "id": "ping-13",
+    "at": "2026-10-14T00:00:12.000Z",
+    "kind": "send",
+    "task_id": "WEB-3",
+    "note": "ping web",
+    "open": 2,
+    "by": "coordinator"
+   },
+   {
+    "id": "ping-17",
+    "at": "2026-10-14T00:00:16.000Z",
+    "kind": "goal-lock",
+    "task_id": "API-2",
+    "detail": {
+     "version": 1
+    },
+    "open": 4,
+    "by": "owner"
+   },
+   {
+    "id": "ping-18",
+    "at": "2026-10-14T00:00:17.000Z",
+    "kind": "send",
+    "task_id": "API-2",
+    "note": "ping ZZAPI2ZZ",
+    "open": 4,
+    "by": "coordinator"
+   },
+   {
+    "id": "ping-25",
+    "at": "2026-10-14T00:00:24.000Z",
+    "kind": "routing",
+    "task_id": "API-2",
+    "detail": {
+     "model": "sonnet",
+     "effort": "high"
+    },
+    "open": 4,
+    "by": "owner"
+   }
+  ],
+  "watcher_at": "",
+  "attention": {
+   "waiting": [
+    {
+     "kind": "ask",
+     "id": "ask-9",
+     "task_id": "WEB-3",
+     "step_id": "s2",
+     "text": "ask web",
+     "options": [],
+     "rev": 1,
+     "from": {
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "since": "2026-10-14T00:00:08.000Z",
+     "age_ms": 17000
+    },
+    {
+     "kind": "ask",
+     "id": "ask-14",
+     "task_id": "API-2",
+     "step_id": "s2",
+     "text": "ask ZZAPI2ZZ",
+     "options": [],
+     "rev": 1,
+     "from": {
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "since": "2026-10-14T00:00:13.000Z",
+     "age_ms": 12000
+    }
+   ],
+   "answered": []
+  },
+  "stalled": [],
+  "freshness": {
+   "stale_h": 24,
+   "auto_request": true
+  },
+  "stale_text": [],
+  "notify": {
+   "coordinator_feedback": true,
+   "delivery": "watch",
+   "webhook_url": ""
+  }
+ },
+ "coordinator": {
+  "version": 1,
+  "seq": 25,
+  "now": "2026-10-14T00:00:25.000Z",
+  "config": {
+   "version": "0.1.0",
+   "stall_ms": 10800000,
+   "max_attachment_bytes": 262144,
+   "max_upload_bytes": 67108864,
+   "models": [
+    "opus",
+    "sonnet",
+    "haiku",
+    "deepseek",
+    "gpt",
+    "gemini"
+   ],
+   "model_labels": {}
+  },
+  "me": {
+   "token_id": "tok-2",
+   "name": "coordinator",
+   "role": "coordinator",
+   "lane": "coordination",
+   "model": "opus",
+   "scope_tasks": [
+    "*"
+   ],
+   "prefs": {}
+  },
+  "tasks": [
+   {
+    "id": "API-2",
+    "rev": 1,
+    "visibility": "internal",
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:07.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:07.000Z"
+    },
+    "title": "Rate limiter ZZAPI2ZZ",
+    "lane": "lane-beta",
+    "health": "green",
+    "status": "doing",
+    "text_at": "2026-10-14T00:00:07.000Z",
+    "goal": "goal ZZAPI2ZZ",
+    "worker": {
+     "model": "sonnet",
+     "effort": "high",
+     "by": "owner",
+     "at": "2026-10-14T00:00:24.000Z"
+    },
+    "loops": [],
+    "step_ids": [
+     "s1",
+     "s2"
+    ],
+    "steps": [
+     {
+      "id": "API-2/s1",
+      "task_id": "API-2",
+      "rev": 1,
+      "attribution": {
+       "created_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "created_at": "2026-10-14T00:00:07.000Z",
+       "updated_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "updated_at": "2026-10-14T00:00:07.000Z"
+      },
+      "label": "Implement ZZAPI2ZZ",
+      "zone": "build",
+      "state": "active",
+      "state_at": "2026-10-14T00:00:07.000Z"
+     },
+     {
+      "id": "API-2/s2",
+      "task_id": "API-2",
+      "rev": 1,
+      "attribution": {
+       "created_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "created_at": "2026-10-14T00:00:07.000Z",
+       "updated_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "updated_at": "2026-10-14T00:00:07.000Z"
+      },
+      "label": "Owner decides ZZAPI2ZZ",
+      "zone": "owner",
+      "state": "waiting",
+      "state_at": "2026-10-14T00:00:07.000Z"
+     }
+    ],
+    "current_step": {
+     "id": "API-2/s1",
+     "label": "Implement ZZAPI2ZZ",
+     "state": "active"
+    },
+    "last_activity_at": "2026-10-14T00:00:21.000Z",
+    "worker_default": null,
+    "roles": {
+     "plan": {
+      "model": "opus",
+      "effort": "high",
+      "by": "coordinator",
+      "default": true
+     },
+     "code": {
+      "model": "sonnet",
+      "effort": "high",
+      "by": "owner",
+      "at": "2026-10-14T00:00:24.000Z"
+     },
+     "review": {
+      "model": "opus",
+      "effort": "high",
+      "by": "coordinator",
+      "default": true
+     },
+     "scout": {
+      "model": "haiku",
+      "effort": "low",
+      "by": "coordinator",
+      "default": true,
+      "can_verdict": false
+     }
+    },
+    "gate_fails": {},
+    "measured": {
+     "started_at": "2026-10-14T00:00:07.000Z",
+     "work_ms": 0,
+     "wait_ms": 18000
+    },
+    "status_request": null
+   },
+   {
+    "id": "WEB-3",
+    "rev": 1,
+    "visibility": "internal",
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:06.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:06.000Z"
+    },
+    "title": "Landing page",
+    "lane": "lane-alpha",
+    "health": "green",
+    "status": "doing",
+    "text_at": "2026-10-14T00:00:06.000Z",
+    "goal": "Ship the page",
+    "worker": null,
+    "loops": [],
+    "step_ids": [
+     "s1",
+     "s2"
+    ],
+    "steps": [
+     {
+      "id": "WEB-3/s1",
+      "task_id": "WEB-3",
+      "rev": 1,
+      "attribution": {
+       "created_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "created_at": "2026-10-14T00:00:06.000Z",
+       "updated_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "updated_at": "2026-10-14T00:00:06.000Z"
+      },
+      "label": "Build",
+      "zone": "build",
+      "state": "active",
+      "state_at": "2026-10-14T00:00:06.000Z"
+     },
+     {
+      "id": "WEB-3/s2",
+      "task_id": "WEB-3",
+      "rev": 1,
+      "attribution": {
+       "created_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "created_at": "2026-10-14T00:00:06.000Z",
+       "updated_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "updated_at": "2026-10-14T00:00:06.000Z"
+      },
+      "label": "Owner picks hero",
+      "zone": "owner",
+      "state": "waiting",
+      "state_at": "2026-10-14T00:00:06.000Z"
+     }
+    ],
+    "current_step": {
+     "id": "WEB-3/s1",
+     "label": "Build",
+     "state": "active"
+    },
+    "last_activity_at": "2026-10-14T00:00:20.000Z",
+    "worker_default": null,
+    "roles": {
+     "plan": {
+      "model": "opus",
+      "effort": "high",
+      "by": "coordinator",
+      "default": true
+     },
+     "code": {
+      "model": "sonnet",
+      "effort": "high",
+      "by": "coordinator",
+      "default": true
+     },
+     "review": {
+      "model": "opus",
+      "effort": "high",
+      "by": "coordinator",
+      "default": true
+     },
+     "scout": {
+      "model": "haiku",
+      "effort": "low",
+      "by": "coordinator",
+      "default": true,
+      "can_verdict": false
+     }
+    },
+    "gate_fails": {},
+    "measured": {
+     "started_at": "2026-10-14T00:00:06.000Z",
+     "work_ms": 0,
+     "wait_ms": 19000
+    },
+    "status_request": null
+   }
+  ],
+  "asks": [
+   {
+    "id": "ask-9",
+    "task_id": "WEB-3",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:08.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:08.000Z"
+    },
+    "step_id": "s2",
+    "text": "ask web",
+    "status": "open"
+   },
+   {
+    "id": "ask-14",
+    "task_id": "API-2",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:13.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:13.000Z"
+    },
+    "step_id": "s2",
+    "text": "ask ZZAPI2ZZ",
+    "status": "open"
+   }
+  ],
+  "inbox": [
+   {
+    "id": "inb-21",
+    "task_id": "WEB-3",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-3",
+      "name": "lane-alpha",
+      "role": "reporter",
+      "lane": "lane-alpha"
+     },
+     "created_at": "2026-10-14T00:00:20.000Z",
+     "updated_by": {
+      "token_id": "tok-3",
+      "name": "lane-alpha",
+      "role": "reporter",
+      "lane": "lane-alpha"
+     },
+     "updated_at": "2026-10-14T00:00:20.000Z"
+    },
+    "kind": "report",
+    "text": "reporter note web"
+   },
+   {
+    "id": "inb-22",
+    "task_id": "API-2",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-4",
+      "name": "lane-beta",
+      "role": "reporter",
+      "lane": "lane-beta"
+     },
+     "created_at": "2026-10-14T00:00:21.000Z",
+     "updated_by": {
+      "token_id": "tok-4",
+      "name": "lane-beta",
+      "role": "reporter",
+      "lane": "lane-beta"
+     },
+     "updated_at": "2026-10-14T00:00:21.000Z"
+    },
+    "kind": "report",
+    "text": "reporter note ZZAPI2ZZ"
+   }
+  ],
+  "feedback": [
+   {
+    "id": "fb-10",
+    "task_id": "WEB-3",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "created_at": "2026-10-14T00:00:09.000Z",
+     "updated_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "updated_at": "2026-10-14T00:00:09.000Z"
+    },
+    "kind": "note",
+    "text": "feedback web",
+    "status": "open"
+   },
+   {
+    "id": "fb-12",
+    "task_id": "WEB-3",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "created_at": "2026-10-14T00:00:11.000Z",
+     "updated_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "updated_at": "2026-10-14T00:00:11.000Z"
+    },
+    "kind": "goal-lock",
+    "goal_version": 1,
+    "text": "Goal locked v1\nGoal: locked web\nOutput: o\nOutcome: c",
+    "status": "open"
+   },
+   {
+    "id": "fb-15",
+    "task_id": "API-2",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "created_at": "2026-10-14T00:00:14.000Z",
+     "updated_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "updated_at": "2026-10-14T00:00:14.000Z"
+    },
+    "kind": "note",
+    "text": "feedback ZZAPI2ZZ",
+    "status": "open"
+   },
+   {
+    "id": "fb-17",
+    "task_id": "API-2",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "created_at": "2026-10-14T00:00:16.000Z",
+     "updated_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "updated_at": "2026-10-14T00:00:16.000Z"
+    },
+    "kind": "goal-lock",
+    "goal_version": 1,
+    "text": "Goal locked v1\nGoal: locked ZZAPI2ZZ\nOutput: o\nOutcome: c",
+    "status": "open"
+   }
+  ],
+  "messages": [
+   {
+    "id": "fb-10",
+    "task_id": "WEB-3",
+    "scope": {},
+    "kind": "note",
+    "author": {
+     "name": "owner",
+     "role": "owner"
+    },
+    "body": "feedback web",
+    "ts": "2026-10-14T00:00:09.000Z",
+    "answers_ask_id": null,
+    "status": "open",
+    "needs_receipt": false
+   },
+   {
+    "id": "fb-12",
+    "task_id": "WEB-3",
+    "scope": {},
+    "kind": "goal-lock",
+    "author": {
+     "name": "owner",
+     "role": "owner"
+    },
+    "body": "Goal locked v1\nGoal: locked web\nOutput: o\nOutcome: c",
+    "ts": "2026-10-14T00:00:11.000Z",
+    "answers_ask_id": null,
+    "status": "open",
+    "needs_receipt": false
+   },
+   {
+    "id": "fb-15",
+    "task_id": "API-2",
+    "scope": {},
+    "kind": "note",
+    "author": {
+     "name": "owner",
+     "role": "owner"
+    },
+    "body": "feedback ZZAPI2ZZ",
+    "ts": "2026-10-14T00:00:14.000Z",
+    "answers_ask_id": null,
+    "status": "open",
+    "needs_receipt": false
+   },
+   {
+    "id": "fb-17",
+    "task_id": "API-2",
+    "scope": {},
+    "kind": "goal-lock",
+    "author": {
+     "name": "owner",
+     "role": "owner"
+    },
+    "body": "Goal locked v1\nGoal: locked ZZAPI2ZZ\nOutput: o\nOutcome: c",
+    "ts": "2026-10-14T00:00:16.000Z",
+    "answers_ask_id": null,
+    "status": "open",
+    "needs_receipt": false
+   }
+  ],
+  "attachments": [
+   {
+    "id": "att-19",
+    "task_id": "WEB-3",
+    "rev": 1,
+    "visibility": "internal",
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:18.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:18.000Z"
+    },
+    "name": "web.txt",
+    "mime": "text/plain",
+    "size": 9,
+    "sha256": "9a949da0d35532fc4afb4049dafbffebdce4a766df2329d457ef9c5d828d9715"
+   },
+   {
+    "id": "att-20",
+    "task_id": "API-2",
+    "rev": 1,
+    "visibility": "internal",
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:19.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:19.000Z"
+    },
+    "name": "api-ZZAPI2ZZ.txt",
+    "mime": "text/plain",
+    "size": 18,
+    "sha256": "d15bd90b9f30ba774ecfbc5b1ca28818e4475e3953b41da79eb4773f98d4d41b"
+   }
+  ],
+  "routing": {
+   "API-2": {
+    "task_id": "API-2",
+    "model": "sonnet",
+    "effort": "high",
+    "set_by": {
+     "token_id": "tok-1",
+     "name": "owner",
+     "role": "owner",
+     "label": "owner"
+    },
+    "set_at": "2026-10-14T00:00:24.000Z"
+   }
+  },
+  "route_override": {},
+  "roles": {},
+  "times": {
+   "WEB-3/s1": {
+    "first_seen_at": "2026-10-14T00:00:06.000Z",
+    "waiting_total_ms": 0,
+    "last_state": "active",
+    "transitions": [],
+    "started_at": "2026-10-14T00:00:06.000Z"
+   },
+   "WEB-3/s2": {
+    "first_seen_at": "2026-10-14T00:00:06.000Z",
+    "waiting_total_ms": 0,
+    "last_state": "waiting",
+    "transitions": [],
+    "waiting_since": "2026-10-14T00:00:06.000Z"
+   },
+   "API-2/s1": {
+    "first_seen_at": "2026-10-14T00:00:07.000Z",
+    "waiting_total_ms": 0,
+    "last_state": "active",
+    "transitions": [],
+    "started_at": "2026-10-14T00:00:07.000Z"
+   },
+   "API-2/s2": {
+    "first_seen_at": "2026-10-14T00:00:07.000Z",
+    "waiting_total_ms": 0,
+    "last_state": "waiting",
+    "transitions": [],
+    "waiting_since": "2026-10-14T00:00:07.000Z"
+   }
+  },
+  "task_times": {
+   "WEB-3": {
+    "first_seen_at": "2026-10-14T00:00:06.000Z",
+    "started_at": "2026-10-14T00:00:06.000Z"
+   },
+   "API-2": {
+    "first_seen_at": "2026-10-14T00:00:07.000Z",
+    "started_at": "2026-10-14T00:00:07.000Z"
+   }
+  },
+  "docs": {
+   "summary": {
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:22.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:22.000Z"
+    },
+    "items": [
+     "board note ZZAPI2ZZ"
+    ]
+   },
+   "registry": {
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:23.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:23.000Z"
+    },
+    "entries": [
+     {
+      "id": "reg-web",
+      "code": "WEB-3",
+      "title": "Landing page",
+      "status": "open"
+     },
+     {
+      "id": "reg-api",
+      "code": "API-2",
+      "title": "Rate limiter ZZAPI2ZZ",
+      "status": "open"
+     }
+    ]
+   }
+  },
+  "goals": {
+   "WEB-3": {
+    "task_id": "WEB-3",
+    "version": 1,
+    "goal": "locked web",
+    "output": "o",
+    "outcome": "c",
+    "locked_at": "2026-10-14T00:00:11.000Z",
+    "locked_by": {
+     "token_id": "tok-1",
+     "name": "owner",
+     "role": "owner",
+     "label": "owner"
+    },
+    "history": []
+   },
+   "API-2": {
+    "task_id": "API-2",
+    "version": 1,
+    "goal": "locked ZZAPI2ZZ",
+    "output": "o",
+    "outcome": "c",
+    "locked_at": "2026-10-14T00:00:16.000Z",
+    "locked_by": {
+     "token_id": "tok-1",
+     "name": "owner",
+     "role": "owner",
+     "label": "owner"
+    },
+    "history": []
+   }
+  },
+  "plans": {
+   "WEB-3": [
+    {
+     "id": "plan-11",
+     "task_id": "WEB-3",
+     "reviewer": "fable",
+     "verdict": "",
+     "body": "plan web",
+     "posted_at": "2026-10-14T00:00:10.000Z",
+     "goal_version": 0,
+     "by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     }
+    }
+   ],
+   "API-2": [
+    {
+     "id": "plan-16",
+     "task_id": "API-2",
+     "reviewer": "fable",
+     "verdict": "",
+     "body": "plan ZZAPI2ZZ",
+     "posted_at": "2026-10-14T00:00:15.000Z",
+     "goal_version": 0,
+     "by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     }
+    }
+   ]
+  },
+  "pings": [
+   {
+    "id": "ping-12",
+    "at": "2026-10-14T00:00:11.000Z",
+    "kind": "goal-lock",
+    "task_id": "WEB-3",
+    "detail": {
+     "version": 1
+    },
+    "open": 2,
+    "by": "owner"
+   },
+   {
+    "id": "ping-13",
+    "at": "2026-10-14T00:00:12.000Z",
+    "kind": "send",
+    "task_id": "WEB-3",
+    "note": "ping web",
+    "open": 2,
+    "by": "coordinator"
+   },
+   {
+    "id": "ping-17",
+    "at": "2026-10-14T00:00:16.000Z",
+    "kind": "goal-lock",
+    "task_id": "API-2",
+    "detail": {
+     "version": 1
+    },
+    "open": 4,
+    "by": "owner"
+   },
+   {
+    "id": "ping-18",
+    "at": "2026-10-14T00:00:17.000Z",
+    "kind": "send",
+    "task_id": "API-2",
+    "note": "ping ZZAPI2ZZ",
+    "open": 4,
+    "by": "coordinator"
+   },
+   {
+    "id": "ping-25",
+    "at": "2026-10-14T00:00:24.000Z",
+    "kind": "routing",
+    "task_id": "API-2",
+    "detail": {
+     "model": "sonnet",
+     "effort": "high"
+    },
+    "open": 4,
+    "by": "owner"
+   }
+  ],
+  "watcher_at": "",
+  "attention": {
+   "waiting": [
+    {
+     "kind": "ask",
+     "id": "ask-9",
+     "task_id": "WEB-3",
+     "step_id": "s2",
+     "text": "ask web",
+     "options": [],
+     "rev": 1,
+     "from": {
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "since": "2026-10-14T00:00:08.000Z",
+     "age_ms": 17000
+    },
+    {
+     "kind": "ask",
+     "id": "ask-14",
+     "task_id": "API-2",
+     "step_id": "s2",
+     "text": "ask ZZAPI2ZZ",
+     "options": [],
+     "rev": 1,
+     "from": {
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "since": "2026-10-14T00:00:13.000Z",
+     "age_ms": 12000
+    }
+   ],
+   "answered": []
+  },
+  "stalled": [],
+  "freshness": {
+   "stale_h": 24,
+   "auto_request": true
+  },
+  "stale_text": [],
+  "notify": {
+   "coordinator_feedback": true,
+   "delivery": "watch"
+  }
+ },
+ "reporter_star": {
+  "version": 1,
+  "seq": 25,
+  "now": "2026-10-14T00:00:25.000Z",
+  "config": {
+   "version": "0.1.0",
+   "stall_ms": 10800000,
+   "max_attachment_bytes": 262144,
+   "max_upload_bytes": 67108864,
+   "models": [
+    "opus",
+    "sonnet",
+    "haiku",
+    "deepseek",
+    "gpt",
+    "gemini"
+   ],
+   "model_labels": {}
+  },
+  "me": {
+   "token_id": "tok-5",
+   "name": "lane-star",
+   "role": "reporter",
+   "lane": "lane-star",
+   "scope_tasks": [
+    "*"
+   ],
+   "prefs": {}
+  },
+  "tasks": [
+   {
+    "id": "API-2",
+    "rev": 1,
+    "visibility": "internal",
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:07.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:07.000Z"
+    },
+    "title": "Rate limiter ZZAPI2ZZ",
+    "lane": "lane-beta",
+    "health": "green",
+    "status": "doing",
+    "text_at": "2026-10-14T00:00:07.000Z",
+    "goal": "goal ZZAPI2ZZ",
+    "worker": {
+     "model": "sonnet",
+     "effort": "high",
+     "by": "owner",
+     "at": "2026-10-14T00:00:24.000Z"
+    },
+    "loops": [],
+    "step_ids": [
+     "s1",
+     "s2"
+    ],
+    "steps": [
+     {
+      "id": "API-2/s1",
+      "task_id": "API-2",
+      "rev": 1,
+      "attribution": {
+       "created_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "created_at": "2026-10-14T00:00:07.000Z",
+       "updated_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "updated_at": "2026-10-14T00:00:07.000Z"
+      },
+      "label": "Implement ZZAPI2ZZ",
+      "zone": "build",
+      "state": "active",
+      "state_at": "2026-10-14T00:00:07.000Z"
+     },
+     {
+      "id": "API-2/s2",
+      "task_id": "API-2",
+      "rev": 1,
+      "attribution": {
+       "created_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "created_at": "2026-10-14T00:00:07.000Z",
+       "updated_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "updated_at": "2026-10-14T00:00:07.000Z"
+      },
+      "label": "Owner decides ZZAPI2ZZ",
+      "zone": "owner",
+      "state": "waiting",
+      "state_at": "2026-10-14T00:00:07.000Z"
+     }
+    ],
+    "current_step": {
+     "id": "API-2/s1",
+     "label": "Implement ZZAPI2ZZ",
+     "state": "active"
+    },
+    "last_activity_at": "2026-10-14T00:00:21.000Z",
+    "worker_default": null,
+    "roles": {
+     "plan": {
+      "model": "opus",
+      "effort": "high",
+      "by": "coordinator",
+      "default": true
+     },
+     "code": {
+      "model": "sonnet",
+      "effort": "high",
+      "by": "owner",
+      "at": "2026-10-14T00:00:24.000Z"
+     },
+     "review": {
+      "model": "opus",
+      "effort": "high",
+      "by": "coordinator",
+      "default": true
+     },
+     "scout": {
+      "model": "haiku",
+      "effort": "low",
+      "by": "coordinator",
+      "default": true,
+      "can_verdict": false
+     }
+    },
+    "gate_fails": {},
+    "measured": {
+     "started_at": "2026-10-14T00:00:07.000Z",
+     "work_ms": 0,
+     "wait_ms": 18000
+    },
+    "status_request": null
+   },
+   {
+    "id": "WEB-3",
+    "rev": 1,
+    "visibility": "internal",
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:06.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:06.000Z"
+    },
+    "title": "Landing page",
+    "lane": "lane-alpha",
+    "health": "green",
+    "status": "doing",
+    "text_at": "2026-10-14T00:00:06.000Z",
+    "goal": "Ship the page",
+    "worker": null,
+    "loops": [],
+    "step_ids": [
+     "s1",
+     "s2"
+    ],
+    "steps": [
+     {
+      "id": "WEB-3/s1",
+      "task_id": "WEB-3",
+      "rev": 1,
+      "attribution": {
+       "created_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "created_at": "2026-10-14T00:00:06.000Z",
+       "updated_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "updated_at": "2026-10-14T00:00:06.000Z"
+      },
+      "label": "Build",
+      "zone": "build",
+      "state": "active",
+      "state_at": "2026-10-14T00:00:06.000Z"
+     },
+     {
+      "id": "WEB-3/s2",
+      "task_id": "WEB-3",
+      "rev": 1,
+      "attribution": {
+       "created_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "created_at": "2026-10-14T00:00:06.000Z",
+       "updated_by": {
+        "token_id": "tok-2",
+        "name": "coordinator",
+        "role": "coordinator",
+        "lane": "coordination",
+        "model": "opus"
+       },
+       "updated_at": "2026-10-14T00:00:06.000Z"
+      },
+      "label": "Owner picks hero",
+      "zone": "owner",
+      "state": "waiting",
+      "state_at": "2026-10-14T00:00:06.000Z"
+     }
+    ],
+    "current_step": {
+     "id": "WEB-3/s1",
+     "label": "Build",
+     "state": "active"
+    },
+    "last_activity_at": "2026-10-14T00:00:20.000Z",
+    "worker_default": null,
+    "roles": {
+     "plan": {
+      "model": "opus",
+      "effort": "high",
+      "by": "coordinator",
+      "default": true
+     },
+     "code": {
+      "model": "sonnet",
+      "effort": "high",
+      "by": "coordinator",
+      "default": true
+     },
+     "review": {
+      "model": "opus",
+      "effort": "high",
+      "by": "coordinator",
+      "default": true
+     },
+     "scout": {
+      "model": "haiku",
+      "effort": "low",
+      "by": "coordinator",
+      "default": true,
+      "can_verdict": false
+     }
+    },
+    "gate_fails": {},
+    "measured": {
+     "started_at": "2026-10-14T00:00:06.000Z",
+     "work_ms": 0,
+     "wait_ms": 19000
+    },
+    "status_request": null
+   }
+  ],
+  "asks": [
+   {
+    "id": "ask-9",
+    "task_id": "WEB-3",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:08.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:08.000Z"
+    },
+    "step_id": "s2",
+    "text": "ask web",
+    "status": "open"
+   },
+   {
+    "id": "ask-14",
+    "task_id": "API-2",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:13.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:13.000Z"
+    },
+    "step_id": "s2",
+    "text": "ask ZZAPI2ZZ",
+    "status": "open"
+   }
+  ],
+  "inbox": [
+   {
+    "id": "inb-21",
+    "task_id": "WEB-3",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-3",
+      "name": "lane-alpha",
+      "role": "reporter",
+      "lane": "lane-alpha"
+     },
+     "created_at": "2026-10-14T00:00:20.000Z",
+     "updated_by": {
+      "token_id": "tok-3",
+      "name": "lane-alpha",
+      "role": "reporter",
+      "lane": "lane-alpha"
+     },
+     "updated_at": "2026-10-14T00:00:20.000Z"
+    },
+    "kind": "report",
+    "text": "reporter note web"
+   },
+   {
+    "id": "inb-22",
+    "task_id": "API-2",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-4",
+      "name": "lane-beta",
+      "role": "reporter",
+      "lane": "lane-beta"
+     },
+     "created_at": "2026-10-14T00:00:21.000Z",
+     "updated_by": {
+      "token_id": "tok-4",
+      "name": "lane-beta",
+      "role": "reporter",
+      "lane": "lane-beta"
+     },
+     "updated_at": "2026-10-14T00:00:21.000Z"
+    },
+    "kind": "report",
+    "text": "reporter note ZZAPI2ZZ"
+   }
+  ],
+  "feedback": [
+   {
+    "id": "fb-10",
+    "task_id": "WEB-3",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "created_at": "2026-10-14T00:00:09.000Z",
+     "updated_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "updated_at": "2026-10-14T00:00:09.000Z"
+    },
+    "kind": "note",
+    "text": "feedback web",
+    "status": "open"
+   },
+   {
+    "id": "fb-12",
+    "task_id": "WEB-3",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "created_at": "2026-10-14T00:00:11.000Z",
+     "updated_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "updated_at": "2026-10-14T00:00:11.000Z"
+    },
+    "kind": "goal-lock",
+    "goal_version": 1,
+    "text": "Goal locked v1\nGoal: locked web\nOutput: o\nOutcome: c",
+    "status": "open"
+   },
+   {
+    "id": "fb-15",
+    "task_id": "API-2",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "created_at": "2026-10-14T00:00:14.000Z",
+     "updated_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "updated_at": "2026-10-14T00:00:14.000Z"
+    },
+    "kind": "note",
+    "text": "feedback ZZAPI2ZZ",
+    "status": "open"
+   },
+   {
+    "id": "fb-17",
+    "task_id": "API-2",
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "created_at": "2026-10-14T00:00:16.000Z",
+     "updated_by": {
+      "token_id": "tok-1",
+      "name": "owner",
+      "role": "owner",
+      "label": "owner"
+     },
+     "updated_at": "2026-10-14T00:00:16.000Z"
+    },
+    "kind": "goal-lock",
+    "goal_version": 1,
+    "text": "Goal locked v1\nGoal: locked ZZAPI2ZZ\nOutput: o\nOutcome: c",
+    "status": "open"
+   }
+  ],
+  "messages": [
+   {
+    "id": "fb-10",
+    "task_id": "WEB-3",
+    "scope": {},
+    "kind": "note",
+    "author": {
+     "name": "owner",
+     "role": "owner"
+    },
+    "body": "feedback web",
+    "ts": "2026-10-14T00:00:09.000Z",
+    "answers_ask_id": null,
+    "status": "open",
+    "needs_receipt": false
+   },
+   {
+    "id": "fb-12",
+    "task_id": "WEB-3",
+    "scope": {},
+    "kind": "goal-lock",
+    "author": {
+     "name": "owner",
+     "role": "owner"
+    },
+    "body": "Goal locked v1\nGoal: locked web\nOutput: o\nOutcome: c",
+    "ts": "2026-10-14T00:00:11.000Z",
+    "answers_ask_id": null,
+    "status": "open",
+    "needs_receipt": false
+   },
+   {
+    "id": "fb-15",
+    "task_id": "API-2",
+    "scope": {},
+    "kind": "note",
+    "author": {
+     "name": "owner",
+     "role": "owner"
+    },
+    "body": "feedback ZZAPI2ZZ",
+    "ts": "2026-10-14T00:00:14.000Z",
+    "answers_ask_id": null,
+    "status": "open",
+    "needs_receipt": false
+   },
+   {
+    "id": "fb-17",
+    "task_id": "API-2",
+    "scope": {},
+    "kind": "goal-lock",
+    "author": {
+     "name": "owner",
+     "role": "owner"
+    },
+    "body": "Goal locked v1\nGoal: locked ZZAPI2ZZ\nOutput: o\nOutcome: c",
+    "ts": "2026-10-14T00:00:16.000Z",
+    "answers_ask_id": null,
+    "status": "open",
+    "needs_receipt": false
+   }
+  ],
+  "attachments": [
+   {
+    "id": "att-19",
+    "task_id": "WEB-3",
+    "rev": 1,
+    "visibility": "internal",
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:18.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:18.000Z"
+    },
+    "name": "web.txt",
+    "mime": "text/plain",
+    "size": 9,
+    "sha256": "9a949da0d35532fc4afb4049dafbffebdce4a766df2329d457ef9c5d828d9715"
+   },
+   {
+    "id": "att-20",
+    "task_id": "API-2",
+    "rev": 1,
+    "visibility": "internal",
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:19.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:19.000Z"
+    },
+    "name": "api-ZZAPI2ZZ.txt",
+    "mime": "text/plain",
+    "size": 18,
+    "sha256": "d15bd90b9f30ba774ecfbc5b1ca28818e4475e3953b41da79eb4773f98d4d41b"
+   }
+  ],
+  "routing": {
+   "API-2": {
+    "task_id": "API-2",
+    "model": "sonnet",
+    "effort": "high",
+    "set_by": {
+     "token_id": "tok-1",
+     "name": "owner",
+     "role": "owner",
+     "label": "owner"
+    },
+    "set_at": "2026-10-14T00:00:24.000Z"
+   }
+  },
+  "route_override": {},
+  "roles": {},
+  "times": {
+   "WEB-3/s1": {
+    "first_seen_at": "2026-10-14T00:00:06.000Z",
+    "waiting_total_ms": 0,
+    "last_state": "active",
+    "transitions": [],
+    "started_at": "2026-10-14T00:00:06.000Z"
+   },
+   "WEB-3/s2": {
+    "first_seen_at": "2026-10-14T00:00:06.000Z",
+    "waiting_total_ms": 0,
+    "last_state": "waiting",
+    "transitions": [],
+    "waiting_since": "2026-10-14T00:00:06.000Z"
+   },
+   "API-2/s1": {
+    "first_seen_at": "2026-10-14T00:00:07.000Z",
+    "waiting_total_ms": 0,
+    "last_state": "active",
+    "transitions": [],
+    "started_at": "2026-10-14T00:00:07.000Z"
+   },
+   "API-2/s2": {
+    "first_seen_at": "2026-10-14T00:00:07.000Z",
+    "waiting_total_ms": 0,
+    "last_state": "waiting",
+    "transitions": [],
+    "waiting_since": "2026-10-14T00:00:07.000Z"
+   }
+  },
+  "task_times": {
+   "WEB-3": {
+    "first_seen_at": "2026-10-14T00:00:06.000Z",
+    "started_at": "2026-10-14T00:00:06.000Z"
+   },
+   "API-2": {
+    "first_seen_at": "2026-10-14T00:00:07.000Z",
+    "started_at": "2026-10-14T00:00:07.000Z"
+   }
+  },
+  "docs": {
+   "summary": {
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:22.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:22.000Z"
+    },
+    "items": [
+     "board note ZZAPI2ZZ"
+    ]
+   },
+   "registry": {
+    "rev": 1,
+    "attribution": {
+     "created_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "created_at": "2026-10-14T00:00:23.000Z",
+     "updated_by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "updated_at": "2026-10-14T00:00:23.000Z"
+    },
+    "entries": [
+     {
+      "id": "reg-web",
+      "code": "WEB-3",
+      "title": "Landing page",
+      "status": "open"
+     },
+     {
+      "id": "reg-api",
+      "code": "API-2",
+      "title": "Rate limiter ZZAPI2ZZ",
+      "status": "open"
+     }
+    ]
+   }
+  },
+  "goals": {
+   "WEB-3": {
+    "task_id": "WEB-3",
+    "version": 1,
+    "goal": "locked web",
+    "output": "o",
+    "outcome": "c",
+    "locked_at": "2026-10-14T00:00:11.000Z",
+    "locked_by": {
+     "token_id": "tok-1",
+     "name": "owner",
+     "role": "owner",
+     "label": "owner"
+    },
+    "history": []
+   },
+   "API-2": {
+    "task_id": "API-2",
+    "version": 1,
+    "goal": "locked ZZAPI2ZZ",
+    "output": "o",
+    "outcome": "c",
+    "locked_at": "2026-10-14T00:00:16.000Z",
+    "locked_by": {
+     "token_id": "tok-1",
+     "name": "owner",
+     "role": "owner",
+     "label": "owner"
+    },
+    "history": []
+   }
+  },
+  "plans": {
+   "WEB-3": [
+    {
+     "id": "plan-11",
+     "task_id": "WEB-3",
+     "reviewer": "fable",
+     "verdict": "",
+     "body": "plan web",
+     "posted_at": "2026-10-14T00:00:10.000Z",
+     "goal_version": 0,
+     "by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     }
+    }
+   ],
+   "API-2": [
+    {
+     "id": "plan-16",
+     "task_id": "API-2",
+     "reviewer": "fable",
+     "verdict": "",
+     "body": "plan ZZAPI2ZZ",
+     "posted_at": "2026-10-14T00:00:15.000Z",
+     "goal_version": 0,
+     "by": {
+      "token_id": "tok-2",
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     }
+    }
+   ]
+  },
+  "pings": [
+   {
+    "id": "ping-12",
+    "at": "2026-10-14T00:00:11.000Z",
+    "kind": "goal-lock",
+    "task_id": "WEB-3",
+    "detail": {
+     "version": 1
+    },
+    "open": 2,
+    "by": "owner"
+   },
+   {
+    "id": "ping-13",
+    "at": "2026-10-14T00:00:12.000Z",
+    "kind": "send",
+    "task_id": "WEB-3",
+    "note": "ping web",
+    "open": 2,
+    "by": "coordinator"
+   },
+   {
+    "id": "ping-17",
+    "at": "2026-10-14T00:00:16.000Z",
+    "kind": "goal-lock",
+    "task_id": "API-2",
+    "detail": {
+     "version": 1
+    },
+    "open": 4,
+    "by": "owner"
+   },
+   {
+    "id": "ping-18",
+    "at": "2026-10-14T00:00:17.000Z",
+    "kind": "send",
+    "task_id": "API-2",
+    "note": "ping ZZAPI2ZZ",
+    "open": 4,
+    "by": "coordinator"
+   },
+   {
+    "id": "ping-25",
+    "at": "2026-10-14T00:00:24.000Z",
+    "kind": "routing",
+    "task_id": "API-2",
+    "detail": {
+     "model": "sonnet",
+     "effort": "high"
+    },
+    "open": 4,
+    "by": "owner"
+   }
+  ],
+  "watcher_at": "",
+  "attention": {
+   "waiting": [
+    {
+     "kind": "ask",
+     "id": "ask-9",
+     "task_id": "WEB-3",
+     "step_id": "s2",
+     "text": "ask web",
+     "options": [],
+     "rev": 1,
+     "from": {
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "since": "2026-10-14T00:00:08.000Z",
+     "age_ms": 17000
+    },
+    {
+     "kind": "ask",
+     "id": "ask-14",
+     "task_id": "API-2",
+     "step_id": "s2",
+     "text": "ask ZZAPI2ZZ",
+     "options": [],
+     "rev": 1,
+     "from": {
+      "name": "coordinator",
+      "role": "coordinator",
+      "lane": "coordination",
+      "model": "opus"
+     },
+     "since": "2026-10-14T00:00:13.000Z",
+     "age_ms": 12000
+    }
+   ],
+   "answered": []
+  },
+  "stalled": [],
+  "freshness": {
+   "stale_h": 24,
+   "auto_request": true
+  },
+  "stale_text": []
+ },
+ "anonymous": {
+  "version": 1,
+  "seq": 25,
+  "now": "2026-10-14T00:00:25.000Z",
+  "config": {
+   "version": "0.1.0",
+   "stall_ms": 10800000,
+   "max_attachment_bytes": 262144,
+   "max_upload_bytes": 67108864,
+   "models": [
+    "opus",
+    "sonnet",
+    "haiku",
+    "deepseek",
+    "gpt",
+    "gemini"
+   ],
+   "model_labels": {}
+  },
+  "me": null,
+  "tasks": [],
+  "attachments": []
+ }
+}

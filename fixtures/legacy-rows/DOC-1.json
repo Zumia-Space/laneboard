@@ -1,0 +1,24 @@
+{
+ "code": "DOC-1",
+ "title": "Contributor guide",
+ "lane": "docs-lane",
+ "health": "yellow",
+ "goal": "A new contributor can open their first pull request in under 30 minutes",
+ "now": "Draft reviewed once; screenshots missing",
+ "next": "Owner picks the tone for the intro section",
+ "needsAnh": "Which tone should the intro use?",
+ "dossier": "private/notes/DOC-1.md",
+ "updated": "2026-01-10",
+ "askAt": "2026-01-10T08:00:00Z",
+ "order": 2,
+ "context": "Synthetic fixture. The guide covers setup, tests and the review flow.",
+ "steps": [
+  { "id": "s1", "label": "Outline", "sub": "", "state": "done", "zone": "plan", "detail": "Outline agreed: setup, running tests, opening a PR.", "recommend": "" },
+  { "id": "s2", "label": "First draft", "sub": "1,200 words", "state": "done", "zone": "build", "detail": "Draft written in plain English with copyable commands.", "recommend": "" },
+  { "id": "s3", "label": "Owner picks the tone", "sub": "", "state": "waiting", "zone": "anh", "detail": "Two tones drafted for the intro.", "recommend": "A — shorter, fits a README",
+    "options": [ { "key": "A", "label": "Friendly and short", "desc": "Two sentences, first person plural" }, { "key": "B", "label": "Formal and complete", "desc": "" } ] },
+  { "id": "s4", "label": "Publish", "sub": "", "state": "todo", "zone": "ship", "detail": "", "recommend": "" }
+ ],
+ "worker": { "model": "sonnet", "effort": "medium", "reason": "prose, low risk" },
+ "loops": [ { "from": "s3", "to": "s2", "label": "tone rejected -> redraft" } ]
+}

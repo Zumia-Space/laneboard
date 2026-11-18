@@ -1,0 +1,44 @@
+{
+  "$comment": "Synthetic demo data. Every write goes through POST /api/v1/write as the named session. 'owner' is the bootstrap owner token.",
+  "tokens": [
+    { "name": "coordinator", "role": "coordinator", "label": "coordinator", "lane": "coordination", "model": "opus" },
+    { "name": "lane-alpha", "role": "reporter", "label": "web lane", "lane": "lane-alpha", "model": "sonnet", "scope_tasks": ["WEB-3", "OPS-4"] },
+    { "name": "lane-beta", "role": "reporter", "label": "api lane", "lane": "lane-beta", "model": "deepseek", "scope_tasks": ["API-2"] }
+  ],
+  "legacy_rows": ["legacy-rows/API-2.json", "legacy-rows/DOC-1.json"],
+  "writes": [
+    { "as": "coordinator", "op": "task.create", "target_id": "WEB-3", "data": {
+      "title": "Landing page refresh", "lane": "lane-alpha", "health": "green", "order": 0, "visibility": "public",
+      "goal": "Visitors understand what the product does within five seconds",
+      "now": "New layout built; waiting for the owner to pick the hero",
+      "next": "Ship to staging after the hero is chosen",
+      "worker": { "model": "sonnet", "effort": "medium", "reason": "UI work, reviewed by screenshots" },
+      "steps": [
+        { "id": "s1", "label": "Brief", "zone": "plan", "state": "done", "detail": "One page, three sections, one call to action." },
+        { "id": "s2", "label": "Build layout", "zone": "build", "state": "done", "detail": "Responsive grid, 16px base type, dark and light themes." },
+        { "id": "s3", "label": "Owner picks hero", "zone": "owner", "state": "waiting", "detail": "Two hero variants rendered side by side." },
+        { "id": "s4", "label": "Ship to staging", "zone": "ship", "state": "todo" }
+      ],
+      "loops": [ { "from": "s3", "to": "s2", "label": "hero rejected -> rebuild" } ] } },
+    { "as": "coordinator", "op": "task.create", "target_id": "OPS-4", "data": {
+      "title": "Backup restore rehearsal", "lane": "lane-alpha", "health": "yellow", "order": 3,
+      "goal": "Restore last night's backup into a scratch environment in under 15 minutes",
+      "now": "Restore script written; first rehearsal pending",
+      "next": "Time the rehearsal and record the result",
+      "worker": { "model": "sonnet", "effort": "high", "reason": "touches data; careful" },
+      "steps": [
+        { "id": "s1", "label": "Write restore script", "zone": "build", "state": "done" },
+        { "id": "s2", "label": "Rehearse restore", "zone": "test", "state": "active", "detail": "Scratch environment only. Never production." },
+        { "id": "s3", "label": "Record timing", "zone": "ship", "state": "todo" }
+      ] } },
+    { "as": "lane-alpha", "op": "inbox.submit", "target_id": "WEB-3", "data": { "kind": "ask", "step_id": "s3", "text": "Which hero should ship: the product screenshot or the illustration?",
+      "options": [ { "key": "A", "label": "Product screenshot", "desc": "Concrete, shows the board itself" }, { "key": "B", "label": "Illustration", "desc": "Warmer, less literal" } ] } },
+    { "as": "lane-beta", "op": "inbox.submit", "target_id": "API-2", "data": { "kind": "report", "text": "Load test at 8k rps: p99 41 ms, zero 5xx. Headers verified." } },
+    { "as": "lane-beta", "op": "inbox.submit", "target_id": "API-2", "data": { "kind": "step", "step_id": "s3", "state": "done", "text": "Load test passed." } },
+    { "as": "coordinator", "op": "inbox.merge", "target_id": "$inbox:API-2:report", "expected_revision": 1, "data": { "action": "accept" } },
+    { "as": "owner", "op": "feedback.add", "target_id": "WEB-3", "data": { "kind": "note", "text": "Keep the call to action above the fold on phones." } },
+    { "as": "coordinator", "op": "feedback.add", "target_id": "WEB-3", "data": { "kind": "reply", "reply_to": "$feedback:WEB-3:note", "text": "Done in the layout: the button sits at 420px on a 390px-wide phone." } },
+    { "as": "owner", "op": "routing.set", "target_id": "API-2", "data": { "model": "opus", "effort": "high" } },
+    { "as": "lane-alpha", "op": "attachment.add", "target_id": "WEB-3", "data": { "name": "hero-variants.png", "mime": "image/png", "step_id": "s3", "caption": "Hero A (left) and hero B (right)", "visibility": "public", "data_base64": "$png:hero" } }
+  ]
+}

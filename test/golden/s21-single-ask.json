@@ -1,0 +1,290 @@
+[
+ {
+  "label": "create, no ask",
+  "writes": 1,
+  "needsAnh": "",
+  "steps": [
+   [
+    "a",
+    "todo"
+   ],
+   [
+    "b",
+    "todo"
+   ],
+   [
+    "z",
+    "todo"
+   ]
+  ],
+  "asks": [],
+  "open": 0
+ },
+ {
+  "label": "ask Q1 on a",
+  "writes": 2,
+  "needsAnh": "Q1",
+  "steps": [
+   [
+    "a",
+    "waiting"
+   ],
+   [
+    "b",
+    "todo"
+   ],
+   [
+    "z",
+    "todo"
+   ]
+  ],
+  "asks": [
+   [
+    "Workerb",
+    "a",
+    "Q1"
+   ]
+  ],
+  "open": 1
+ },
+ {
+  "label": "same row again",
+  "writes": 0,
+  "needsAnh": "Q1",
+  "steps": [
+   [
+    "a",
+    "waiting"
+   ],
+   [
+    "b",
+    "todo"
+   ],
+   [
+    "z",
+    "todo"
+   ]
+  ],
+  "asks": [
+   [
+    "Workerb",
+    "a",
+    "Q1"
+   ]
+  ],
+  "open": 1
+ },
+ {
+  "label": "reworded on a",
+  "writes": 2,
+  "needsAnh": "Q1 reworded",
+  "steps": [
+   [
+    "a",
+    "waiting"
+   ],
+   [
+    "b",
+    "todo"
+   ],
+   [
+    "z",
+    "todo"
+   ]
+  ],
+  "asks": [
+   [
+    "Workerb",
+    "a",
+    "Q1 reworded"
+   ]
+  ],
+  "open": 1
+ },
+ {
+  "label": "moved to b, a done",
+  "writes": 4,
+  "needsAnh": "Q2",
+  "steps": [
+   [
+    "a",
+    "done"
+   ],
+   [
+    "b",
+    "waiting"
+   ],
+   [
+    "z",
+    "todo"
+   ]
+  ],
+  "asks": [
+   [
+    "Workerb",
+    "b",
+    "Q2"
+   ]
+  ],
+  "open": 1
+ },
+ {
+  "label": "blank, step still waiting",
+  "writes": 1,
+  "needsAnh": "",
+  "steps": [
+   [
+    "a",
+    "done"
+   ],
+   [
+    "b",
+    "waiting"
+   ],
+   [
+    "z",
+    "todo"
+   ]
+  ],
+  "asks": [],
+  "open": 0
+ },
+ {
+  "label": "ask Q3 on b again",
+  "writes": 1,
+  "needsAnh": "Q3",
+  "steps": [
+   [
+    "a",
+    "done"
+   ],
+   [
+    "b",
+    "waiting"
+   ],
+   [
+    "z",
+    "todo"
+   ]
+  ],
+  "asks": [
+   [
+    "Workerb",
+    "b",
+    "Q3"
+   ]
+  ],
+  "open": 1
+ },
+ {
+  "label": "blank, step done (the client clear)",
+  "writes": 2,
+  "needsAnh": "",
+  "steps": [
+   [
+    "a",
+    "done"
+   ],
+   [
+    "b",
+    "done"
+   ],
+   [
+    "z",
+    "todo"
+   ]
+  ],
+  "asks": [],
+  "open": 0
+ },
+ {
+  "label": "ask on an options step",
+  "writes": 2,
+  "needsAnh": "Q4",
+  "steps": [
+   [
+    "a",
+    "done"
+   ],
+   [
+    "b",
+    "waiting"
+   ],
+   [
+    "z",
+    "todo"
+   ]
+  ],
+  "asks": [
+   [
+    "Workerb",
+    "b",
+    "Q4"
+   ]
+  ],
+  "open": 1
+ },
+ {
+  "label": "blank, options step waiting, askStep kept",
+  "writes": 1,
+  "needsAnh": "",
+  "steps": [
+   [
+    "a",
+    "done"
+   ],
+   [
+    "b",
+    "waiting"
+   ],
+   [
+    "z",
+    "todo"
+   ]
+  ],
+  "asks": [],
+  "open": 0
+ },
+ {
+  "label": "finished",
+  "writes": 1,
+  "needsAnh": "",
+  "steps": [
+   [
+    "a",
+    "done"
+   ],
+   [
+    "b",
+    "done"
+   ],
+   [
+    "z",
+    "todo"
+   ]
+  ],
+  "asks": [],
+  "open": 0
+ },
+ {
+  "label": "finished again",
+  "writes": 0,
+  "needsAnh": "",
+  "steps": [
+   [
+    "a",
+    "done"
+   ],
+   [
+    "b",
+    "done"
+   ],
+   [
+    "z",
+    "todo"
+   ]
+  ],
+  "asks": [],
+  "open": 0
+ }
+]
